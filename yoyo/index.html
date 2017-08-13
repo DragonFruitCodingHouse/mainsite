@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<body>
+	
+<script type="text/javascript">
+
+var magic = prompt("Are you a boy or a girl?");
+
+var user = prompt("SWOOSH. An owl flies in through the window and drops the letter on your lap. Do you open it? (YES or NO)");
+
+switch (user.toUpperCase()) {
+    case "YES":
+        if (magic === "girl") {
+            var answer = prompt("You open up the letter...no way! It's a letter from Hogwarts, school of Witchcraft and Wizardry! You're a witch! The train to Hogwarts is leaving in an hour, do you want to catch it? (YES or NO)");
+            switch (answer.toUpperCase()) {
+                case "YES":
+                    answer = prompt("As the train moves swiftly across the land, you catch your first glimpse of Hogwarts and you press your face against the glass ecstatic. Suddenly, a tubby boy barges into your little cabin on the train and shouts 'Hey you Mudblood!'. You don't know what it means, but you know it can't be good. You turn around and look him and his goons straight in the face. Do you want to KEEP LOOKING outside the window, PUNCH HIM in his pudgy face, or CRY and hope he leaves?");
+                    switch (answer.toUpperCase()) {
+                        case "KEEP LOOKING":
+                            answer = prompt("He's not worth your time. You turn your back on him and continue to look out the window. You can hear them sniggering behind your back as they leave. Out of nowhere from somewhere behind you, a higher pitched male voice says 'Hi, may I sit here?' Do you YELL at him to leave you alone, NOD your head, or TURN to face him?");
+                            switch (answer.toUpperCase()) {
+	                            case "YELL":
+	                            	answer = prompt("You whip your body around and you yell at that boy. You yell at him until he's crying and whimpering on the ground. You tell him to get off his lazy ass and get out, which he does promptly. ... The sorting ceremony, the scariest time in any young witch or wizard's life. The older witch with the loud voice calls your name from her scroll of parchment and you stumble towards the stool. She places a ratty old hat onto your head that suddenly falls over your eyes. You hear a voice speaking to you. 'Hmm, you're a feisty one aren't you, yes, yes I see. You would do well in Slytherin.' Do you let the Sorting Hat put you in Slytherin? (YES or NO)");
+	                            	switch (answer.toUpperCase()) {
+		                            	case "YES":
+		                            		confirm("The Slytherin table cheers as you go join them!");
+		                            		break;
+		                            	case "NO":
+		                            		answer = prompt("Which house would you like to join? Gryffindor, Hufflepuff, or Ravenclaw?");
+		                            		switch (answer.toUpperCase()) {
+			                            		case "GRYFFINDOR":
+			                            			confirm("The Gryffindor table cheers as you go join them!");
+			                            			break;
+			                            		case "RAVENCLAW":
+			                            			confirm("The Ravenclaw table cheers as you go join them!");
+			                            			break;
+			                            		case "HUFFLEPUFF":
+			                            			confirm("The Hufflepuff table cheers as you go join them!");
+			                            			break;
+			                            		default:
+			                            		confirm("The Slytherin table cheers as you go join them!");
+		                            		}
+		                            		break;
+		                            	default:
+		                            	confirm("The Slytherin table cheers as you go join them!");
+	                            	}
+	                            	break;
+	                            case "NOD":
+	                            	answer = prompt("You hear the boy sit down. He says, 'My name's Robby, it was really brave of you to just ignore those goons.' You turn around and you talk to Robby as the train rustles along the track to the great castle. ... The sorting ceremony, the scariest time in any young witch or wizard's life. The older witch with the loud voice calls your name from her scroll of parchment and you stumble towards the stool. She places a ratty old hat onto your head that suddenly falls over your eyes. You hear a voice speaking to you. 'Hmm, you're a smart one aren't you, yes, yes I see. You would do well in Ravenclaw.' Do you let the Sorting Hat put you in Ravenclaw? (YES or NO)");
+	                            	switch (answer.toUpperCase()) {
+		                            	case "YES":
+		                            		confirm("The Ravenclaw table cheers as you go join them!");
+		                            		break;
+		                            	case "NO":
+		                            		answer = prompt("Which house would you like to join? Gryffindor, Hufflepuff, or Slytherin?");
+		                            		switch (answer.toUpperCase()) {
+			                            		case "GRYFFINDOR":
+			                            			confirm("The Gryffindor table cheers as you go join them!");
+			                            			break;
+			                            		case "SLYTHERIN":
+			                            			confirm("The Slytherin table cheers as you go join them!");
+			                            			break;
+			                            		case "HUFFLEPUFF":
+			                            			confirm("The Hufflepuff table cheers as you go join them!");
+			                            			break;
+			                            		default:
+			                            		confirm("The Ravenclaw table cheers as you go join them!");
+		                            		}
+		                            		break;
+		                            	default:
+		                            	confirm("The Ravenclaw table cheers as you go join them!");
+	                            	}
+	                            	break;
+	                            case "TURN":
+	                            	answer = prompt("It's a rather tall and scrawny boy with bright blonde hair that's staring back at you with crystal clear blue eyes. Your first thought is of how cute he is. You push your feelings down and wait for him to speak. 'Hi, I'm Robby, can't wait to get to Hogwarts! Would you like a jellybean?' You take a jellybean and you both talk until the train reaches the station. ... The sorting ceremony, the scariest time in any young witch or wizard's life. The older witch with the loud voice calls your name from her scroll of parchment and you stumble towards the stool. She places a ratty old hat onto your head that suddenly falls over your eyes. You hear a voice speaking to you. 'Hmm, you're very loyal aren't you, yes, yes I see. You would do well in Hufflepuff.' Do you let the Sorting Hat put you in Hufflepuff? (YES or NO)");
+	                            	switch (answer.toUpperCase()) {
+		                            	case "YES":
+		                            		confirm("The Hufflepuff table cheers as you go join them!");
+		                            		break;
+		                            	case "NO":
+		                            		answer = prompt("Which house would you like to join? Gryffindor, Slytherin, or Ravenclaw?");
+		                            		switch (answer.toUpperCase()) {
+			                            		case "GRYFFINDOR":
+			                            			confirm("The Gryffindor table cheers as you go join them!");
+			                            			break;
+			                            		case "RAVENCLAW":
+			                            			confirm("The Ravenclaw table cheers as you go join them!");
+			                            			break;
+			                            		case "SLYTHERIN":
+			                            			confirm("The Slytherin table cheers as you go join them!");
+			                            			break;
+			                            		default:
+			                            		confirm("The Hufflepuff table cheers as you go join them!");
+		                            		}
+		                            		break;
+		                            	default:
+		                            	confirm("The Hufflepuff table cheers as you go join them!");
+	                            	}
+	                            	break;
+	                            default:
+	                            confirm("The boy's spider jumps onto your shoulder and bites you. You die within seconds.");
+                            }
+                            break;
+                        case "PUNCH HIM":
+                            answer = prompt("A blood curdling scream comes out of the boy as your knuckles make contact with the side of his face. His nose is oozing blood and heads are peeping out from the train compartments wondering what just happened. The goons drag their leader away and a boy walks into your compartment smirking at you. 'Nice punch! My name's Bosley, Billy Bosley.' He holds out his hand to you. Do you SHAKE his hand or LEAVE him hanging?");
+                            switch (answer.toUpperCase()) {
+	                            case "SHAKE":
+	                            	answer = prompt("You and Billy Bosley shake hands and bond over some chocolate frogs. You get your first ever card from your chocolate frog, and lucky for you, it's a Harry Potter card! You show Billy all excitedly, but Billy just shrugs 'I have 43 of him'. ... The sorting ceremony, the scariest time in any young witch or wizard's life. The older witch with the loud voice calls your name from her scroll of parchment and you stumble towards the stool. She places a ratty old hat onto your head that suddenly falls over your eyes. You hear a voice speaking to you. 'Hmm, you're very brave aren't you, yes, yes I see. You would do well in Gryffindor.' Do you let the Sorting Hat put you in Gryffindor? (YES or NO)");
+	                            	switch (answer.toUpperCase()) {
+		                            	case "YES":
+		                            		confirm("The Gryffindor table cheers as you go join them!");
+		                            		break;
+		                            	case "NO":
+		                            		answer = prompt("Which house would you like to join? Hufflepuff, Slytherin, or Ravenclaw?");
+		                            		switch (answer.toUpperCase()) {
+			                            		case "HUFFLEPUFF":
+			                            			confirm("The Hufflepuff table cheers as you go join them!");
+			                            			break;
+			                            		case "RAVENCLAW":
+			                            			confirm("The Ravenclaw table cheers as you go join them!");
+			                            			break;
+			                            		case "SLYTHERIN":
+			                            			confirm("The Slytherin table cheers as you go join them!");
+			                            			break;
+			                            		default:
+			                            		confirm("The Gryffindor table cheers as you go join them!");
+		                            		}
+		                            		break;
+		                            	default:
+		                            	confirm("The Gryffindor table cheers as you go join them!");
+	                            	}
+	                            	break;
+	                            case "LEAVE":
+	                            	answer = prompt("You ignore his outstretched hand and instead walk past him and find yourself a nice empty compartment, where you curl up on the seat and fall asleep, only to be awoken by the sound of a lot of people exiting a train. ... The sorting ceremony, the scariest time in any young witch or wizard's life. The older witch with the loud voice calls your name from her scroll of parchment and you stumble towards the stool. She places a ratty old hat onto your head that suddenly falls over your eyes. You hear a voice speaking to you. 'Hmm, you're very feisty aren't you, yes, yes I see. You would do well in Slytherin.' Do you let the Sorting Hat put you in Slytherin? (YES or NO)");
+	                            	switch (answer.toUpperCase()) {
+		                            	case "YES":
+		                            		confirm("The Slytherin table cheers as you go join them!");
+		                            		break;
+		                            	case "NO":
+		                            		answer = prompt("Which house would you like to join? Gryffindor, Hufflepuff, or Ravenclaw?");
+		                            		switch (answer.toUpperCase()) {
+			                            		case "GRYFFINDOR":
+			                            			confirm("The Gryffindor table cheers as you go join them!");
+			                            			break;
+			                            		case "RAVENCLAW":
+			                            			confirm("The Ravenclaw table cheers as you go join them!");
+			                            			break;
+			                            		case "HUFFLEPUFF":
+			                            			confirm("The Hufflepuff table cheers as you go join them!");
+			                            			break;
+			                            		default:
+			                            		confirm("The Slytherin table cheers as you go join them!");
+		                            		}
+		                            		break;
+		                            	default:
+		                            	confirm("The Slytherin table cheers as you go join them!");
+	                            	}
+	                            	break;
+	                            default:
+	                            confirm("Voldermort appears behind Billy and launches a green jet of light towards you. You're dead before you hit the ground.");
+                            }
+                            break;
+                        case "CRY":
+                            answer = prompt("You curl up on the seat and start sobbing into your arms. Boys can be so mean, you wish you were home right now. The boys start to laugh even louder and hollering about the crying witch they stumble out of the cabin. You raise your head and wipe away your tears. At least you've finally arrived at Hogwarts! Do you want to exit the train now? (YES or NO)");
+                            switch (answer.toUpperCase()) {
+	                            case "YES":
+	                            	answer = prompt("You leave the train and make your way across the lake to the looming castle. ... The sorting ceremony, the scariest time in any young witch or wizard's life. The older witch with the loud voice calls your name from her scroll of parchment and you stumble towards the stool. She places a ratty old hat onto your head that suddenly falls over your eyes. You hear a voice speaking to you. 'Hmm, you're very loyal aren't you, yes, yes I see. You would do well in Hufflepuff.' Do you let the Sorting Hat put you in Hufflepuff? (YES or NO)");
+	                            	switch (answer.toUpperCase()) {
+		                            	case "YES":
+		                            		confirm("The Hufflepuff table cheers as you go join them!");
+		                            		break;
+		                            	case "NO":
+		                            		answer = prompt("Which house would you like to join? Gryffindor, Slytherin, or Ravenclaw?");
+		                            		switch (answer.toUpperCase()) {
+			                            		case "GRYFFINDOR":
+			                            			confirm("The Gryffindor table cheers as you go join them!");
+			                            			break;
+			                            		case "RAVENCLAW":
+			                            			confirm("The Ravenclaw table cheers as you go join them!");
+			                            			break;
+			                            		case "SLYTHERIN":
+			                            			confirm("The Slytherin table cheers as you go join them!");
+			                            			break;
+			                            		default:
+			                            		confirm("The Hufflepuff table cheers as you go join them!");
+		                            		}
+		                            		break;
+		                            	default:
+		                            	confirm("The Hufflepuff table cheers as you go join them!");
+	                            	}
+	                            	break;
+	                            case "NO":
+	                            	confirm("You decide to hide in the train. You end up trapped and suffocate before anyone can find you.");
+	                            	break;
+	                            default:
+	                            confirm("You decide to hide in the train. You end up trapped and suffocate before anyone can find you.");
+                            }
+                            break;
+                        default:
+                        confirm("You do nothing as his venomous toad leaps onto your chest and bites you. You die within minutes.");
+                    }
+                    break;
+                case "NO":
+                    confirm("Well at least you know you're a witch now.");
+                    break;
+                default:
+                    confirm("Well at least you know you're a witch now.");
+            }
+        } else {
+            confirm("Too bad it's just a regular old tax letter");
+        }
+        break;
+    case "NO":
+        confirm("You drop the letter in the fire. Oh well.");
+        break;
+    default:
+    confirm("Oh look at that, it seems like the letter wasn't addressed to you anyways.");
+}
+
+
+
+
+</script>
+
+</body>
+</html>

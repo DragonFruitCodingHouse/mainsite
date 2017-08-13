@@ -1,0 +1,446 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Raleway, Helvetica, sans-serif;
+	color: black;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchors */
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+/* Navigation */
+
+.home {
+	display: inline-block;
+	font-size: 1.5em;
+	margin: auto;
+	float: left;
+}
+
+#dfruit {
+	width: 80px;
+	margin-left: 0.25em;
+	height: 95%;
+}
+
+.a {
+	image-rendering: optimizeQuality;
+	shape-rendering: geometricPrecision;
+	text-rendering: geometricPrecision;
+}
+
+.fil5 { /* left tip */
+	fill: #FF9D1A; /* orange */
+}
+
+.fil4 { /* right tip */
+	fill: #FF9D1A; /* orange */
+}
+
+.fil3 { /* left side */
+	fill: #16B7EE; /* blue */
+}
+
+.fil2 { /* upper */
+	fill: #19E15A; /* green */
+}
+
+.fil1 { /* middle */
+	fill: #16B7EE; /* blue */
+}
+
+.fil0 { /* bottom */
+	fill: #EA1858; /* red */
+}
+
+#dragonfruit {
+	margin-left: 5%;
+	height: 100%;
+}
+
+#dragonfruit p {
+	padding-top: 1.5em;
+	height: 100%;
+	overflow: hidden;
+}
+
+.navbar {
+	width: 100%;
+	height: 6em;
+	overflow: hidden;
+	text-align: center;
+	background-color: white;
+}
+
+.navbar ul {
+	list-style-type: none;
+	height: 100%;
+	width: 70%;
+	overflow: hidden;
+	float: right;
+}
+
+.navbar ul li {
+	display: inline-block;
+	position: relative;
+	top: 1em;
+	font-size: 1.5em;
+	padding: 1%;
+	margin-right: 7.5%;
+	margin-left: 7.5%;
+}
+
+/* Banner */
+
+.banner {
+	background: url(../revamp/images/IMG_1179.JPG) no-repeat top center;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 50%;
+	height: 750px;
+	overflow: hidden;
+}
+
+.bannertext {
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+	padding: 1%;
+}
+
+#us {
+	margin-top: 10%;
+	font-size: 2.5em;
+}
+
+#slogan {
+	margin-top: 2%;
+	width: 45%;
+	font-size: 1.5em;
+}
+
+/* Text */
+
+.info {
+	overflow: hidden;
+}
+
+.headers {
+	font-size: 4em;
+	margin-top: 0.1em;
+	display: block;
+}
+
+.smallheaders {
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+.headers, .smallheaders {
+	color: black;
+}
+
+.headers, .smallheaders, .text{
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.smallheaders, .text{
+	margin-top: 3%;
+}
+
+.text {
+	width: 50%;
+	float: right;
+}
+
+.crew p, .projects p, .services p {
+	font-size: 1.25em;
+}
+
+.testimonial {
+	font-size: 7em;
+	line-height: 2em;
+	margin: 12.5%;
+}
+
+#founder {
+	font-style: italic;
+	font-weight: 700;
+	margin-left: 20%;
+}
+
+a:hover .testimonial {
+	color: black !important;
+}
+
+/* Services */
+
+.services {
+	background-color: #EDEDED;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.services a {
+	font-weight: 700;
+}
+
+.iconcontainer {
+	width: 100%;
+	height: 200px;
+	margin: 4% 0;
+}
+
+.iconcontainer p {
+	margin-top: 1.5em;
+}
+
+.service {
+	width: 27%;
+	height: 50%;
+	margin-left: 3%;
+	margin-right: 3%;
+	display: inline-block;
+	text-align: center;
+}
+
+.icons {
+	height: auto;
+	width: 25%;
+}
+
+/* Crew */
+
+.crew {
+	width: 100%;
+	height: 775px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.crewpics {
+	border: 1px inset #C1C1C1;
+	height: 100%;
+	width: 100%;
+}
+
+.crewcontainer {
+	display: inline-block;
+	text-align: center;
+	width: 21.5%;
+	height: 500px;
+	margin: 1% 1.5%;
+}
+
+#viniel, #ben, #jacy {
+	background-size: cover;
+}
+
+#prit {
+	background: url(../revamp/images/me%209_clipped_rev_2.jpeg) no-repeat center center;
+	background-size: auto 530px;
+	margin-right: 5% !important;
+}
+
+#viniel {
+	background: url(../revamp/images/viniel@2x.png) no-repeat center center;
+}
+
+#jacy {
+	background: url(../revamp/images/jacy@2x.png) no-repeat center center;
+}
+
+#ben {
+	background: url(../revamp/images/ben@2x.png) no-repeat center center;
+	margin-left: 5% !important;
+}
+
+.crewpics p {
+	display: none;
+	position: relative;
+	z-index: 2;	
+	vertical-align: middle;
+	width: 500px;
+	height: 500px;
+	font-size: 1.5em;
+}
+
+.names {
+	margin-top: 1em;
+	font-weight: 700;
+}
+
+.crewicons {
+	height: 30px;
+	margin-top: 3%;
+}
+
+.git {
+	margin-left: 2.5%;
+}
+
+.ln {
+	margin-right: 2.5%;
+}
+
+/* Projects */
+
+.projects {
+ 	background-color: #EDEDED;
+	width: 100%;
+	height: 1600px;
+	overflow: hidden;
+}
+
+.projectpics {
+	width: 90%;
+	height: 650px;
+	margin: 2% 5%;
+}
+
+.rsslideshow {
+	position: absolute;
+}
+
+#rebelsoup {
+	background: url(../revamp/images/Rebel%20Soup%20Banner.png) no-repeat center center;
+}
+
+#rstestimonial {
+	background: url(../revamp/images/rebelsoup-transparent.png) no-repeat center center;
+	display: none;
+}
+
+#healingtree {
+	background: url(../revamp/images/Coming%20Soon%20Banner.png) no-repeat center center;
+}
+
+#rebelsoup, #rstestimonial, #healingtree {
+	background-size: cover;
+}
+
+/* Contact */
+
+.contact {
+	width: 100%;
+	height: 750px;
+	background-color: white;
+}
+
+form {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.contactform {
+	width: 50%;
+	height: 500px;
+	margin: 2% auto;
+	overflow: hidden;
+}
+
+.contactform input {
+	width: 80%;
+	height: 10%;
+	margin-bottom: 3%;
+	font-size: 1rem;
+}
+
+#msg {
+	height: 30%;
+	width: 80%;
+	font-size: 1rem;
+	overflow: hidden;
+	resize: none;
+}
+
+#submitbutton {
+	width: 10%;
+	height: 40px;
+	font-size: 1rem;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#thankyou {
+	color: #EA1858;
+	font-weight: 700;
+	font-size: 1rem;
+	display: none;
+}
+
+/* Footer */
+
+.footer {
+	text-align: center;
+	width: 100%;
+	height: 150px;
+	background-color: #C1C1C1;
+	color: black;
+}
+
+.social {
+	height: 100px;
+	width: 100%;
+}
+
+#fbook, #linkedin {
+	margin: 0 auto;
+	margin-top: 1.5%;
+	height: 50px;
+}
+
+#fbook {
+	margin-right: 2.5%;
+}
+
+#linkedin {
+	margin-left: 2.5%;
+}
+
+.copyright {
+	display: block;
+	width: 100%;
+	height: 50px;
+}

@@ -1,0 +1,250 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/* Universal */
+@font-face {
+    font-family: Myriad Pro Light;
+    src: url(fonts/MyriadPro-LightSemiExt.otf);
+}
+
+@font-face {
+    font-family: Myriad Pro Semi;
+    src: url(fonts/MyriadPro-SemiExt.otf);
+}
+
+html {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+	height: 100%;
+}
+
+body {
+  	font: 1em Myriad Pro Light, Arial, Helvetica, sans-serif;
+  	background: #FFF;
+	color: #44555f;
+	text-align: center;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	min-width: 220px;
+	max-width: 2560px;
+}
+
+hr {
+	border-color: #f2f2f2;
+	margin: 0 auto;
+	padding: 0;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	color: #44555f;
+}
+
+/* Navigation Menu */
+#header {
+	padding: 0 0 0 0;
+	margin: auto;
+	text-align: center;
+	max-width: 1440px;
+}
+
+#header ul {
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none;
+	padding: 0;
+	padding-top: 0.35em;
+	text-align: center;
+	positon: relative;
+	width: 100%;
+}
+
+#header ul li:first-child {
+  	border-left: 1px solid #ff3366;
+}
+
+#header ul li {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 33.33%;
+	min-width: 55px;
+  	height: 3em;
+	line-height: 3em;
+  	font-family: Myriad Pro Semi;
+	font-size: 1em;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #ff3366;
+  	border-left: none;
+}
+
+#header ul li a {
+	color: #ff3366;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+	
+#header ul li a:hover {
+	text-decoration: underline;
+}
+
+#header ul li.active {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-left: 1px solid #ff3366;
+	height: 3.5em;
+	line-height: 3.5em;
+	margin-top: -0.25em;
+}
+
+#header ul li:nth-child(#) {
+	border-right: none;
+}
+
+/* Body */
+#section {
+	margin: auto;
+	background-color: #fff;
+	padding-top: 1em;
+	width: 100%;
+	position: relative;
+	min-height: 710px;
+	height: 75%;
+	overflow: hidden;
+    text-align: center;
+    display: table;
+}
+
+#main {
+	margin: 0 auto;
+	width: 100%;
+    width: 100%;
+	height: 100%;
+    text-align: center;
+	display: table-cell;
+  	vertical-align: middle;
+}
+
+#message {
+	margin: 0 auto;
+	padding: 0;
+	margin-top: -10px;
+}
+
+#main #message h1 {
+	font-size: 3em;
+	font-weight: 100;
+	margin-bottom: -3.0em;
+	margin-top: 0.25em;
+}
+
+#main #message p {
+	font-size: 10em;
+}
+
+/* Boxes */
+#box {
+	margin: auto;
+	text-align: center;
+}
+
+.container {
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	positon: relative;
+	width: 100%;
+}
+
+.container li {
+	float: left;
+	width: 25%;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-left: 3px solid #fff;
+	border-top: 4px solid #fff;
+}
+
+@media screen and (max-width: 1000px){
+	.container li {width:50%;}
+	.container .three {border-left:none;}
+  	#section {height:50%; min-height:500px;}
+	#section #main img {height:400px; width:400px;}
+	#main #message h1 {font-size: 2em; margin-bottom: -2.75em;}
+	#main #message p {font-size: 5em;}
+}
+
+@media screen and (max-width: 640px) {
+	.container li {width:100%;}
+	.container .two {border-left:none;}
+	.container .three {border-left:none;}
+	.container .four {border-left:none;}
+  	#section {height: 25%; min-height:300px;}
+	#section #main img {height:175px; width:175px;}
+	#main #message h1 {font-size: 1.5em; margin-bottom:-2.5em;}
+	#main #message p {font-size: 3.5em;}
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5) {
+	.container .one {background-image:url(images/about2x.png); background-size: 1280px 400px;}
+}
+
+
+.container .one {
+	background-image: url(images/about.png);
+	background-image: -webkit-image-set( url(images/about.png) 1x, url(images/about@2x.png) 2x);
+	background-position: center center;
+}
+
+.container .two {
+	background-image: url(images/iosand.png);
+	background-image: -webkit-image-set( url(images/iosand.png) 1x, url(images/iosand@2x.png) 2x);
+	background-position: center center;
+}
+
+.container .three {
+	background-image: url(images/hello.png);
+	background-image: -webkit-image-set( url(images/hello.png) 1x, url(images/hello@2x.png) 2x);
+	background-position: center center;
+}
+
+.container .four {
+	background-image: url(images/startup.png);
+	background-image: -webkit-image-set( url(images/startup.png) 1x, url(images/startup@2x.png) 2x);
+	background-position: center center;
+}
+
+.container .one:nth-child(1) {
+	border-left: none;
+}
+
+.container .one h3 {
+	font-size: 20px;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+.container .one p {
+	margin-top: 0.25em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	font-size: 0.9em;
+}
+
+/* Footer */
+#footer {
+	font-size: 0.7em;
+	padding-bottom: 0.25em;
+}

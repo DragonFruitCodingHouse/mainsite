@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  a {
+  	color: #818181;
+  }
+  .jumbotron {
+      background-color: #ff0000;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #ff0000;
+      font-size: 50px;
+  }
+  .logo {
+      color: #ff0000;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #ff0000;
+  }
+  .carousel-indicators li {
+      border-color: #ff0000;
+  }
+  .carousel-indicators li.active {
+      background-color: #ff0000;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #ff0000; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #ff0000;
+      background-color: #fff !important;
+      color: #ff0000;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #ff0000 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #ff0000;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #ff0000;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #ff0000 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #ff0000;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">DragonFruit CodingHouse</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>DragonFruit CodingHouse</h1> 
+  <p>We make websites and apps for startups at startup prices</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><a href="#contact" class="btn btn-default btn-lg" >Get in Touch</a>
+    </div>
+    <div class="col-sm-4">
+    	<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 2540 2540" class="a slideanim logo"><style>.a{image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;}</style><defs class="undefined"><style type="text/css" class="undefined">  
+    .fil0 {fill:black}
+   </style></defs><path class="fil0" d="M1254 2486c116 0 191-23 284-86 28-19 36-27 59-47l33-30c21-20 61-72 77-95 75-112 117-235 138-369 8-50 9-100 9-157l0-6c0 0-1 1-1 2l-10 16c-27 48-65 199-82 256-7 26-18 76-36 88-10-7-13-19-19-31-15-28-44-71-62-97-36-54-134-186-180-238-5-6-6-8-11-13-23-26-69-79-93-92 6 77 5 84 5 156l-5 111c-1 9 0 20 0 29 0 14-2 15-3 26 0 9 0 18 0 27-1 20-5 52-5 82 0 14-2 15-3 26-1 21-1 64-8 79-11-1-18-8-25-14l-64-55c-16-13-61-66-77-84-7-8-11-14-17-22l-49-70c-15-25-47-79-57-104-38-92-58-133-74-245-12-82-9-110-9-184 0-29 11-93 11-111-18 12-77 85-91 104-48 66-84 135-115 213-36 89-68 213-75 316-3 45 42 176 63 228 31 75 110 202 173 253 13 10 23 20 36 31 12 10 25 19 38 28 65 43 155 81 246 81z" class="undefined"/><path class="fil0" d="M1093 1040c0 138-30 291-92 392-3 5-6 9-10 14-12 15-12 9-5 57 20 132 44 207 105 321 39 73 79 119 129 180 15 18 66 66 85 81 8 6 18 17 28 20l19-378c0-49 1-74-3-122-2-36-10-61 61 10 29 29 71 79 98 111 16 20 30 39 46 60 8 10 14 18 22 28 24 33 138 189 146 222l5 0c5-22 15-46 22-70 22-75 55-223 96-279 5-7 8-14 9-21l0-17c-1-11-3-24-5-44-15-152-74-322-168-443-8-10-13-17-21-26-15-19-31-32-46-49-8-9-13-18-21-26-16-16-55-68-67-76 24 105 3 321-10 426-2 19-7 69-14 81-12-3-13-8-19-18-34-52-80-134-107-189-5-9-8-15-12-25l-89-170c-4-9-9-15-13-24l-26-48c-10-16-17-32-26-48-10-16-18-31-27-47-19-31-93-161-137-162 0 11 4 22 6 34l32 172c3 21 10 49 10 72z" class="undefined"/><path class="fil0" d="M1000 379c0 76 4 130 15 202l28 168c52 0 131 133 152 173 5 9 8 15 14 23l27 47c17 32 35 62 52 96l25 47c8 17 17 31 26 48l87 167c5 10 8 14 13 24l59 94 12-102c5-35 7-67 10-104 3-43 9-161 5-209-7-89-9-83-46-126-5-6-9-8-14-15-6-8-7-9-14-15-6-6-6-9-12-15l-96-107c-10-10-19-18-27-28l-58-56c-7-7-8-9-13-16-51-63-67-85-103-156-50-100-85-226-85-374-15 11-36 78-41 104-9 39-14 85-14 131z" class="undefined"/><path class="fil0" d="M686 1685l3 124c8-9 10-45 13-56 4-20 8-37 13-56 31-123 60-189 118-297 5-9 8-13 13-21 25-43 71-100 107-136 7-7 29-33 36-33 14-1 4 30 0 53-5 34-15 135-6 173 13-9 41-75 49-96 21-54 43-153 46-213 2-33 8-73 3-103-3-19-9-45-11-63-16 4-75 61-95 77l-52 51c-20 19-75 89-92 115-5 8-8 13-13 21l-38 68c-56 111-93 264-93 392l0 1z" class="undefined"/><path class="fil0" d="M1296 712c14-21 34-89 34-124 0-80-94-215-144-281-16-22-77-99-96-119-11-11-13-17-22-23 0 166 53 315 137 441 13 20 67 90 90 106z" class="undefined"/><path class="fil0" d="M1003 245c9-40 23-76 40-108l-39-43c-13-12-34-33-46-36 0 47 21 131 39 178 3 7 2 6 6 10z" class="undefined"/></svg>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+	      <a href="http://rebelsoup.ca">
+	        <img src="rebelSoup.png" alt="Rebel Soup" width="400" height="300">
+	        <p><strong>Rebel Soup</strong></p>
+	      </a>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>I am so grateful to all the guys behind Dragon Fruit Coding. [...] Always available to answer my questions. I felt very taken care by all four members of the team. [...] I love my website and have received so many compliments on it. I would recommend them to friends.<br><span>Amanda Slater, Founder, Rebel Soup</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Vancouver, Canada</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> info@dragonfruitcode.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <form action="form-to-email.php" id="contactForm" name="contactForm" method="post">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="message" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <input class="btn btn-default pull-right" id="contactFormBtn" type="submit" name='submit' value="submit">
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+    <p>&copy; DragonFruit CodingHouse, 2017</p>
+</footer>
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+<script>
+var frmvalidator  = new Validator("contactForm");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage'], a[href^='#']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $('#contactForm').on('submit', function(event){
+  	event.preventDefault();
+  	var form = event.target;
+  	console.log("sending form");
+  	$.post(form.action, $('#contactForm').serialize(), function(res){
+	        console.log("sent form");
+	        // Do something with the response `res`
+	        console.log(res);
+	       $('#contactForm').trigger('reset');
+	    });
+  	return false;
+  });
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

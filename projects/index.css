@@ -1,0 +1,220 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/* Universal */
+@font-face {
+    font-family: Myriad Pro Light;
+	src: url(../fonts/MyriadPro-LightSemiExt.otf)
+}
+
+@font-face {
+    font-family: Myriad Pro Semi;
+    src: url(../fonts/MyriadPro-SemiExt.otf);
+}
+
+html {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+	height: 100%;
+}
+
+body {
+  	font: 1em Myriad Pro Light, Arial, Helvetica, sans-serif;
+  	background: #FFF;
+	color: #44555f;
+	text-align: center;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	min-width: 220px;
+	max-width: 2560px;
+}
+
+hr {
+	border-color: #f2f2f2;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Navigation Menu */
+#header {
+	padding: 0 0 0 0;
+	margin: auto;
+	text-align: center;
+	max-width: 1440px;
+}
+
+#header ul {
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none;
+	padding: 0;
+	padding-top: 0.35em;
+	text-align: center;
+	positon: relative;
+	width: 100%;
+}
+
+#header ul li:first-child {
+  	border-left: 1px solid #ff3366;
+}
+
+#header ul li {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 33.33%;
+	min-width: 55px;
+  	height: 3em;
+	line-height: 3em;
+  	font-family: Myriad Pro Semi;
+	font-size: 1em;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #ff3366;
+  	border-left: none;
+}
+
+#header ul li a {
+	color: #ff3366;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+	
+#header ul li a:hover {
+	text-decoration: underline;
+}
+
+#header ul li.active {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-left: 1px solid #ff3366;
+	height: 3.5em;
+	line-height: 3.5em;
+	margin-top: -0.25em;
+}
+
+#header ul li:nth-child(1) {
+	border-right: none;
+}
+
+/* Body */
+#section {
+	margin: 0 auto;
+	padding-top: 1em;
+	width: 100%;
+	max-width: 1440px;
+	/*height: 75%;
+	min-height: 710px;*/
+	overflow: hidden;
+    text-align: center;
+	display: block;
+	position: relative;
+}
+
+#message {
+	margin: 0 auto;
+	padding: 0;
+	margin-top: -10px;
+	width: 100%;
+	max-width: 1440px;
+	display: block;
+}
+
+#message h1 {
+	font-size: 3em;
+	font-weight: 100;
+	margin-bottom: -0.3em;
+	margin-top: 0.25em;
+	line-height: 1em;
+}
+
+#message p {
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 0;
+}
+
+#main {
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+	height: 100%;
+	display: block;
+    text-align: center;
+}
+
+#main ul {
+	margin: 0 auto;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	positon: relative;
+	width: 100%;
+}
+
+#main li {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 50%;
+	text-align: center;
+}
+
+#info {
+	padding: 25px 0px 0px 0px;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 100;
+	line-height: 0.5em;
+}
+
+#info p {
+	line-height: 1em;
+	padding: 0 1em 0 1em;
+}
+
+#ged img {
+	background-image: url(../images/gedbanner.png);
+	background-image: -webkit-image-set( url(../images/gedbanner.png) 1x, url(../images/gedbanner@2x.png) 2x);
+	background-position: centre top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#mole img {
+	background-image: url(../images/molebanner.png);
+	background-image: -webkit-image-set( url(../images/molebanner.png) 1x, url(../images/molebanner@2x.png) 2x);
+	background-position: centre top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+@media screen and (max-width: 1000px){
+	#message h1 {font-size: 2.5em; margin-bottom:-0.4em;}
+	#message p {font-size: 1.5em;}
+	#info img {width:128px; height:128px;}
+	h2 {font-size:1.5em;}
+}
+
+@media screen and (max-width: 640px) {
+	#message h1 {line-height:0.9em; margin-bottom:-0.5em;}
+	#ged img, #mole img {display: none;}
+	#main li {width: 100%;}
+	#info img {width:256px; height:256px;}
+	h2 {font-size:2em;}
+}
+
+/* Footer */
+#footer {
+	font-size: 0.7em;
+	padding-bottom: 0.25em;
+}
